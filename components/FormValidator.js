@@ -17,7 +17,7 @@ class FormValidator {
       );
     } else {
       hideInputError(this._formEl, this._inputSelector);
-    }n
+    }
   }
 
   _disableButton() {
@@ -68,6 +68,7 @@ class FormValidator {
     });
     this._setEventListeners();
   }
+  resetValidation(){}
 }
 
 export default FormValidator;

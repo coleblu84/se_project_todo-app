@@ -22,7 +22,7 @@ class Todo {
     this._todoLabel.setAttribute("for", `todo-${this._data.id}`);
   }
 
-  _generatedueDateEl() {
+  _generateDueDateEl() {
     this._todoDate = this._todoElement.querySelector(".todo__date");
     const dueDate = new Date(this._data.date);
     if (!isNaN(dueDate)) {
