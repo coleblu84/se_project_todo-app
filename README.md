@@ -1,17 +1,21 @@
 # Simple Todo App
 
-Give a brief description of the project here. Feel free to give it a different name.
+This Todo App was created to help improve everyday life. To streamline your todos and when they are do. With the ability to add new task and remove task as needed. With the abliliy to put a due date within the task. 
 
 ## Functionality
 
-Give a more detailed explanation of the project and its functionality.
+the Functianlity of this project was to be able to work with modules. Having to rework the current file structure to ensure everything worked right. Moving the dara and configuration object to a new JS file.  Creating and wourking with form validation to make sure evertything did want it was suppose to do. 
 
 ## Technology
 
-Give a description of the technologies and techniques used. Pictures, GIFs, or screenshots that detail the project features are recommended.
+The different techology areas taht i worked on during this project were:
+- the Private method
+- Modules
+- unique IDs
+- undating the file structure
 
 ## Deployment
 
 This project is deployed on GitHub Pages:
 
-- ADD LINK HERE
+https://coleblu84.github.io/se_project_todo-app/
