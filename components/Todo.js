@@ -6,7 +6,7 @@ class Todo {
 
   _setEventListeners() {
     this._todoCheckboxEl.addEventListener("change", () => {
-      this._data.completed = !this._todoCheckboxEl.checked;
+      this._data.completed = this._todoCheckboxEl.checked;
     });
 
     this._todoDeleteBtn.addEventListener("click", () => {
@@ -45,7 +45,7 @@ class Todo {
 
     todoNameEl.textContent = this._data.name;
 
-    this._generatedueDateEl();
+    this._generateDueDateEl();
     this._generateCheckboxEl();
     this._setEventListeners();
 

@@ -26,6 +26,11 @@ const generateTodo = (data) => {
 
 addTodoButton.addEventListener("click", () => {
   openModal(addTodoPopup);
+  document.addEventListener("keydown", (evt) => {
+    if (evt.key === "Escape") {
+      closeModal(addTodoPopup);
+    }
+  });
 });
 
 addTodoCloseBtn.addEventListener("click", () => {
@@ -41,11 +46,15 @@ addTodoForm.addEventListener("submit", (evt) => {
   const date = new Date(dateInput);
   date.setMinutes(date.getMinutes() + date.getTimezoneOffset());
 
-  const todoData = uuidv4();
+  const id = uuidv4();
 
   const values = { name, date, id };
-  const todo = generateTodo(values);
-  todosList.append(todo);
+
+  const renderTodo = (item) => {
+    const todo = generateTodo(item);
+    todosList.append(todo);
+  };
+
   newTodoValidator.resetValidation();
   closeModal(addTodoPopup);
 });

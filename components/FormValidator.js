@@ -10,13 +10,9 @@ class FormValidator {
 
   _checkInputValidity(inputEl) {
     if (!inputEl.validity.valid) {
-      showInputError(
-        this._formEl,
-        this._inputSelector,
-        inputEl.validationMessage,
-      );
+      this._showInputError(inputEl);
     } else {
-      hideInputError(this._formEl, this._inputSelector);
+      this._hideInputError(inputEl);
     }
   }
 
